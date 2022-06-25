@@ -1,0 +1,23 @@
+git status // shows status of the current folder
+
+git init // initializes the current directory as a git repo. If you initialize a folder, git tracks all the subfolders and files in the folder
+
+
+// DO NOT initilazie another folder under a initialized folder!
+
+rm -rf .git // To stop tracking a folder, delete .git folder inside it. ls -a shows this since this is a hidden file.
+
+git add <files> // adds files to stage
+
+git add . // adds all modified files
+
+git commit // performs commit but asks a commit message after this command use below instead
+
+git commit -m "My message"
+
+git status // If we modify the local working directory this command shows us the differences between last commit and current working directory
+
+git log // shows logs of commits
+
+
+
