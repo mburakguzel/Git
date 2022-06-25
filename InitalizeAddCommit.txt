@@ -1,23 +1,53 @@
+STATUS
 git status // shows status of the current folder
 
-git init // initializes the current directory as a git repo. If you initialize a folder, git tracks all the subfolders and files in the folder
+git status // If we modify the local working directory this command shows us the differences between last commit and current working directory
 
+INIT
+git init // initializes the current directory as a git repo. If you initialize a folder, git tracks all the subfolders and files in the folder
 
 // DO NOT initilazie another folder under a initialized folder!
 
 rm -rf .git // To stop tracking a folder, delete .git folder inside it. ls -a shows this since this is a hidden file.
 
+ADD
 git add <files> // adds files to stage
 
 git add . // adds all modified files
 
+COMMIT
 git commit // performs commit but asks a commit message after this command use below instead
 
 git commit -m "My message"
 
-git status // If we modify the local working directory this command shows us the differences between last commit and current working directory
+git commit --amend // cancels the last commit and commits again! Only applicable on last commit! (Ammend: duzeltmek, onarmak!). Commit messages also can be changed by amend.
+This feature can be used when we made a mistak on last commit For example let`s say we forget to add a file to commit:
+git add forgotten file ==> git commit --amend
 
+Keep each commit focused on a single task (one change or task)!
+
+Use present tense in commit messages!
+
+For longer commit messages use text editors! Lines start with # will be ignored by git. # is used to comment out a line in commit message.
+
+LOG
 git log // shows logs of commits
 
+git log --abbrev-commit // shows a smaller log ID (commit hash)
+
+git log --oneline // shows only first line of messages. Does not show who made the commit and when! Shows small commit hash!
+
+CONFIGURE DEFAULT TEXT EDITOR
+git config --global core.editor "vim" // for vim
+
+git config --global core.editor "code --wait" // for Visual Studio Code
+
+other editors can be found in git website
+
+IGNORE
+Create .gitignore file (touch .gitignore) and type folders and folders that you you want git to ignore (do not track)
+foldername/ for folders
+foldername.txt for files
+For .gitignore templates go to toptal.com (search gitignore on google!)
 
 
