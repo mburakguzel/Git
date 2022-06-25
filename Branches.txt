@@ -1,0 +1,24 @@
+git status // shows us on which branch we are currently working on
+
+Master branch has no extra capabilities compared to other branches. However, in projects it is accepted as the master branch of the project!
+
+Github names master branch as main after 2020. Therefore, change your master branches name to main if you work with github. Or change default master branch name on github!
+
+git log // shows HEAD -> main. This is kind of a pointer which shows on which branch this commit has been done.
+The last commit of a branch is called HEAD!
+
+CHECKING BRANCHES
+git branch // shows us all the branches that we have in our repo!
+The branch that we are working on is showed with a asterix(*) before it and in green colour.
+
+CREATE NEW BRANCH
+git branch branchname // creates a branch
+
+git switch -c branchname // creates a new branch and switches to there
+
+git checkout -b branchname  // creates a new branch and switches to there
+
+SWITCH TO ANOTHER BRANCH
+git switch branchname // to switch another 
+
+git checkout branchname // also switches to another branch (old-school)
