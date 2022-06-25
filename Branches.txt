@@ -22,3 +22,5 @@ SWITCH TO ANOTHER BRANCH
 git switch branchname // to switch another 
 
 git checkout branchname // also switches to another branch (old-school)
+
+Page 13!
