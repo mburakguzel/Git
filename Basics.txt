@@ -1,0 +1,34 @@
+git --version //checks if git is installed
+
+git config -global user.name "Burak Guzel" // sets the username
+
+git config user.name // shows the username
+
+git config -global user.email "blah@blah.com" // sets the mail address
+
+git config user.email // shows the email
+
+ls // lists the files in the directory  ----   (dir) for windows cmd! 
+
+ls foldername // shows the contents of a folder in current directory (hint press tab after typing first letters!)
+
+ls -a // shows hidden files
+
+cd foldername // opens a folder
+
+cd .. // moves to one directory back
+
+touch basic.cpp // creates the file. Can also be used for creating multiple files!
+
+mkdir // creates a folder. Can also be used for creating multiple files!
+
+clear // clears terminal
+
+pwd // prints path of the current directory
+
+rm filename // deletes file permanently
+
+rm -rf foldername // deletes folder
+
+
+
