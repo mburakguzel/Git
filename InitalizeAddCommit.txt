@@ -20,6 +20,8 @@ git commit // performs commit but asks a commit message after this command use b
 
 git commit -m "My message"
 
+git commit -a -m "My message" // First adds all unstaged changes and commits! No need to add and commit seperately.
+
 git commit --amend // cancels the last commit and commits again! Only applicable on last commit! (Ammend: duzeltmek, onarmak!). Commit messages also can be changed by amend.
 This feature can be used when we made a mistak on last commit For example let`s say we forget to add a file to commit:
 git add forgotten file ==> git commit --amend
