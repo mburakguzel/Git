@@ -1,0 +1,7 @@
+We can clone repos from gitbucket or any other online repo!
+
+CLONE
+git clone URL // initialize a git repo in our local directory and copies all commits(history) to our machine.
+Also creates a new folder in local directory with the name of the repo in URL.
+
+Any repo we can open and see in Github can be clonned.
