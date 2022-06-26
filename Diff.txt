@@ -14,6 +14,9 @@ COMPARE BRANCHES
 git diff branch1 branch2 // compares branches, branch1 -> a, branch2 -> b
 git diff branch1.. branch2 // compares branches, branch1 -> a, branch2 -> b
 
+COMPARE COMMIT
+git diff commithas1 commithash2 // compares commits
+git diff commithash1.. commithash2 // compares commits
 
 git diff only shows us a small chunk of the code, where changes were made as described below:
 After diff command;
