@@ -1,0 +1,28 @@
+Assume we create new files or make some changes in a new branch, If we switch to master branch without
+committing these changes, there are two scenarios:
+1) My changes come with me to master branch (if branch is changed, master is same)
+2) Git will not let me to switch if it detects potential conflicts (if master is changed, branch is same)
+
+When they come with us to master, if we go back to branch amd commit, they will not come with us anymore.
+
+STASH
+stash means zulalamak, iyi bir yere saklamak
+When we make some changes but want to switch to another branch without commiting:
+git stash // saves all (unstaged,staged) changes for us to come back later. This is not COMMIT!
+git stash save // saves all (unstaged,staged) changes for us to come back later. This is not COMMIT!
+
+git stash pop // deletes the stash and reapplies them to the branch I am in!
+
+git stash apply // applies the stash but keeps the stash, does not delete it!
+
+MULTIPLE STASHES (DO not use soo much!)
+We can have multiple stashes.
+git stash list // shows us our stashes
+
+git stash apply stash@{2} // applies stash number 2
+
+git stash pop // deletes the stash and reapplies the latest stash!
+
+CLEAR STASH
+
+deletes all stashes

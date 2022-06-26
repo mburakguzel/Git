@@ -1,0 +1,13 @@
+MOVE TO OLDER COMMIT
+git checkout commithash // opens a older commit. Shows an error message about detached HEAD!
+First 7 digits of commithash is enough, if you type all it is also okay.
+
+git checkout HEAD~1 // goes back to parent commit (one commit before HEAD)
+git checkout HEAD~2 // goes back to two commits before HEAD. Can be used for all the commits back!
+
+It is possible to go back to an older commit and create a branch there!
+
+git switch master // go back to HEAD of master.
+
+git switch - // Lets say that we moved to an older commit, this command moves us back to the HEAD of that branch.
+

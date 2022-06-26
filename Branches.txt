@@ -18,6 +18,8 @@ git switch -c branchname // creates a new branch and switches to there
 
 git checkout -b branchname  // creates a new branch and switches to there
 
+It is possible to go back to an older commit and create a branch there! (check Oldercommits.txt)
+
 SWITCH TO ANOTHER BRANCH
 git switch branchname // to switch another 
 
@@ -28,6 +30,8 @@ Otherwise, we will loose the changes.
 
 When we create a new file which is not present in other branches, that file will follow us to the 
 branch that we switch. It will follow us wherever we switch.
+
+git switch - // goes back to the previous branch that we were in, before we switch to the branch! 
 
 DELETE BRANCH
 git branch -d branchname // deletes the branch 
