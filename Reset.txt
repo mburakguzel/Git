@@ -1,0 +1,12 @@
+RESET 
+git reset commithash // deletes the commits that are performed after this commit, and moves back to the commit.
+But it keeps the changes done after the commit in workingdirectory
+
+Only deletes commits done after this commit, But changes done in deleted commits still will be in working directory.
+
+This command can be used if you make a commit in wrong branch and carry ur changes to the correct branch.
+
+git reset -- hard commithash // deletes both commits and changes.
+git reset -- hard HEAD~1 // deletes both commits and changes.
+
+Only deletes from the current branch, not from other branches.

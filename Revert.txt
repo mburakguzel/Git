@@ -1,0 +1,7 @@
+REVERT
+git revert commithash // Does not delete the commits. Creates a new commit without the changes done after the commit. Asks for a commit message since creates a new commit.
+git revert HEAD~1 // Does not delete the commits. Creates a new commit without the changes done after the commit. Asks for a commit message since creates a new commit.
+
+
+This command should be used in projects that multiple peaople work to not delete the commits from their repo.
+On your local machine you can use git reset

@@ -39,6 +39,9 @@ COMPARE COMMIT
 git diff commithas1 commithash2 // compares commits
 git diff commithash1.. commithash2 // compares commits
 
+DELETE COMMIT
+Check Reset.txt
+
 LOG
 git log // shows logs of commits
 
