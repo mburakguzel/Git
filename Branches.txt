@@ -43,7 +43,8 @@ git branch -D // forces to delete branch
 
 RENAME BRANCH
 
-git branch -m newname // renames the branch. Must be done in the branch that we want to rename
+git branch -M newname // renames the branch that we are in. Must be done in the branch that we want to rename
+git branch -m oldname newname // renames oldname as newname
 
 DETAILS
 In .git directory refs/heads/branchname shows us the commit hash of that branch`s HEAD (last commit)

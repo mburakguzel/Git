@@ -1,0 +1,19 @@
+If you push a directory to github very first time, you need to create an empty repo at GitHub first!
+
+git push remotename branchname // for all online repos!
+Ex: git push origin master
+
+Most of the people names their main branch as main, since github uses the same.
+
+git push remotename branchname // Creates a new branch in remote and copies our local repo to there.
+From now on, our changes in local machine will go to the branch named as same as the branch in our local machine.
+
+We can also copy our local branch to remote repo with a different name:
+git push remotename localbranchname:differentnamethatwewant
+
+PUSH
+git push -u remotename master // pushes master to remote and matches our master with remotes master.
+We can push by only git push from now on!
+
+git push -u remotename localbranch:remotebranch
+git push // after the above command git push, always pushes localbranch to remotebranch 
