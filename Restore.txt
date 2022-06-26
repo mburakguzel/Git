@@ -1,0 +1,14 @@
+If you made changes on files by mistake but nit want to commit:
+1) Delete all new files created.
+2) git checkout HEAD filename // copies the filename from last commit to workspace!
+   git checkout -- // copies the filename from last commit to workspace!
+
+RESTORE
+git restore filename // discards changes from the file since the last commit. (Same as git checkout HEAD filename given above!)
+
+git restore --source HEAD~1 filename // copies filename from commit HEAD~1 to current workspace
+Also means discard the changes, that are applied after this commit, from the file 
+
+git restore filename // brings discarted changes back!
+
+git restore --staged filename // discards staged
