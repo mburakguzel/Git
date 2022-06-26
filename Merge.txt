@@ -1,0 +1,30 @@
+We merge branches, not commits!
+
+MERGE
+git merge branchname // merges the branchname to the branch that we are in.
+
+In order to merge, first we need to switch to the branch that we want to continue,
+then merge the other branch to this branch.
+
+Merge does not delete the merged branch.
+
+Merge does not mean these two branches are synched. If we make any changes in merged branch, 
+it will not show up at master.
+
+O---O----O_         master    // merging new branch to master is a fast forward merge.
+          |_----O   newbranch
+
+O---O----O_--O--O--O---O        master    // merging new branch to master is a fast forward merge.
+          |_----O--O---|        newbranch
+
+Git creates a new commit to master, that commit has two parent commits (the commits done just before merge)
+Since Git creates a new commit it asks for a commit message!
+
+MERGE CONFLICTS
+
+If there are merge conflicts, GIT will give us an error that there are merge conflicts and ask us to fix them.
+
+Git will show the conflicts in on default text editor.
+
+On VScode, we can delete the lines from merged conflicts, or from master, with a buttoon!
+Or we can manuplate them accordingly.
