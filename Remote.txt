@@ -1,0 +1,11 @@
+REMOTE 
+git remote //shows us the current remote repos defined. Only shows remotes name.
+git remote -v //shows us the current remote repos defined. Also shows remotes URL.
+
+ADD NEW REMOTE
+git remote add remotename URL // adds a new repo.
+
+RENAME REMOTE
+git remote rename oldname newname // renames oldname as newname
+
+Sayfa 32de kaldik!
