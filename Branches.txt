@@ -45,3 +45,7 @@ DETAILS
 In .git directory refs/heads/branchname shows us the commit hash of that branch`s HEAD (last commit)
 
 File whose name is HEAD shows the current branch that we are in.
+
+COMPARE BRANCHES
+git diff branch1 branch2 // compares branches, branch1 -> a, branch2 -> b
+git diff branch1.. branch2 // compares branches, branch1 -> a, branch2 -> b

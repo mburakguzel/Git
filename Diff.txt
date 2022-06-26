@@ -1,0 +1,32 @@
+DIFF
+git diff // shows us all the changes in our working directory that are not STAGED for next commit
+
+git diff HEAD // shows all unstaged and staged changes, since HEAD!
+
+git diff HEAD filename // only shows the changes in this specific file
+
+git diff --staged // shows the diffs between staged files and last commit
+git diff --cached // shows the diffs between staged files and last commit
+
+git diff --staged filename // only shows staged changes in this specific file
+
+COMPARE BRANCHES
+git diff branch1 branch2 // compares branches, branch1 -> a, branch2 -> b
+git diff branch1.. branch2 // compares branches, branch1 -> a, branch2 -> b
+
+
+git diff only shows us a small chunk of the code, where changes were made as described below:
+After diff command;
+1st line shows which files are being compared.
+2nd line is not important!
+------- a/filename.txt // - indicates a (last commit)
++++++++ b/filename.txt // + indicates b (working directory)
+@@ -3,4 +3,5 @@ \\ -3,4 means 4 lines have been extracted starting from line 3 in file a
+                \\ +3,5 means 5 lines have been extracted starting from line 3 in file b
+                green means added (usually new)
+                red means deleted (usually old)
+
+When a new file added git diff shows us:
+----/dev/null // means this file did not exist in last commit
+++++/filename.txt // the file which does not exist in the last commit
+

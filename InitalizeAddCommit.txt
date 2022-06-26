@@ -25,7 +25,7 @@ Does not work when you add new file!
 
 git commit --amend // cancels the last commit and commits again! Only applicable on last commit! (Ammend: duzeltmek, onarmak!). Commit messages also can be changed by amend.
 This feature can be used when we made a mistak on last commit For example let`s say we forget to add a file to commit:
-git add forgotten file ==> git commit --amend
+git add forgotten file ==> git commit --
 
 Keep each commit focused on a single task (one change or task)!
 
@@ -34,6 +34,11 @@ Use present tense in commit messages!
 For longer commit messages use text editors! Lines start with # will be ignored by git. # is used to comment out a line in commit message.
 
 Using ` in commit message causes problems. Use \` instead!
+
+COMPARE COMMIT
+git diff commithas1 commithash2 // compares commits
+git diff commithash1.. commithash2 // compares commits
+
 LOG
 git log // shows logs of commits
 
