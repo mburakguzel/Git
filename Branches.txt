@@ -23,4 +23,25 @@ git switch branchname // to switch another
 
 git checkout branchname // also switches to another branch (old-school)
 
-Page 13!
+When we make some changes on a branch, we can not not switch to another branch without commiting the changes.
+Otherwise, we will loose the changes.
+
+When we create a new file which is not present in other branches, that file will follow us to the 
+branch that we switch. It will follow us wherever we switch.
+
+DELETE BRANCH
+git branch -d branchname // deletes the branch 
+git branch --delete branchname // deletes the branch 
+
+We can not delete a branch when we are in it! Need to switch to another branch.
+
+git branch -D // forces to delete branch
+
+RENAME BRANCH
+
+git branch -m newname // renames the branch. Must be done in the branch that we want to rename
+
+DETAILS
+In .git directory refs/heads/branchname shows us the commit hash of that branch`s HEAD (last commit)
+
+File whose name is HEAD shows the current branch that we are in.
