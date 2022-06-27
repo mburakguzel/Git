@@ -8,4 +8,4 @@ git remote add remotename URL // adds a new repo.
 RENAME REMOTE
 git remote rename oldname newname // renames oldname as newname
 
-Sayfa 32de kaldik!
+git branch -r // shows us which branch on local machine matches to remote branch

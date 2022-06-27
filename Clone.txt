@@ -5,3 +5,12 @@ git clone URL // initialize a git repo in our local directory and copies all com
 Also creates a new folder in local directory with the name of the repo in URL.
 
 Any repo we can open and see in Github can be clonned.
+
+When we clone a remote repo and type git branch, git shows us only main branch, not other branches on online repo
+
+git checkout remotename/branchname // switches to the branchname from remote
+
+git switch branchname // creates a local branch with branchname and sets it up to track with the remote branch remotename/branchname
+branchname must be same!
+git checkout --track remotename/branchname // creates a local branch with branchname and sets it up to track with the remote branch remotename/branchname
+branchname must be same!

@@ -11,6 +11,8 @@ CHECKING BRANCHES
 git branch // shows us all the branches that we have in our repo!
 The branch that we are working on is showed with a asterix(*) before it and in green colour.
 
+git branch -r // shows all branches on remote repo! 
+
 CREATE NEW BRANCH
 git branch branchname // creates a branch
 
@@ -33,6 +35,13 @@ branch that we switch. It will follow us wherever we switch.
 
 git switch - // goes back to the previous branch that we were in, before we switch to the branch! 
 
+git checkout remotename/branchname // switches to the branchname from remote
+
+git switch branchname // creates a local branch with branchname and sets it up to track with the remote branch remotename/branchname
+branchname must be same!
+git checkout --track remotename/branchname // creates a local branch with branchname and sets it up to track with the remote branch remotename/branchname
+branchname must be same!
+
 DELETE BRANCH
 git branch -d branchname // deletes the branch 
 git branch --delete branchname // deletes the branch 
@@ -42,7 +51,6 @@ We can not delete a branch when we are in it! Need to switch to another branch.
 git branch -D // forces to delete branch
 
 RENAME BRANCH
-
 git branch -M newname // renames the branch that we are in. Must be done in the branch that we want to rename
 git branch -m oldname newname // renames oldname as newname
 
@@ -54,3 +62,6 @@ File whose name is HEAD shows the current branch that we are in.
 COMPARE BRANCHES
 git diff branch1 branch2 // compares branches, branch1 -> a, branch2 -> b
 git diff branch1.. branch2 // compares branches, branch1 -> a, branch2 -> b
+
+REMOTE BRANCH
+git branch -r // shows us which branch on local machine matches to remote branch
