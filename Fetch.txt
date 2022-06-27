@@ -23,5 +23,5 @@ If a fetched branch does not exist in local, git synches it automatically even w
 If change are made on remote repo and you type git status in your local machine, it will say that your branch is up to date with remotename/branch.
 However it is not true because it compares with the remotename/branch from clone! 
 When you type git status after fetch, git says your branch is behind one commit and can be fast-forwarded.
- 
 
+When there is merge conflicts for pull request, first fetch, solve them on your local machine than merge!

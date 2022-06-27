@@ -1,0 +1,9 @@
+This is not a git command, this is abutton on Github 
+fork means catal!
+
+Github allows us to create personal copies of other peoples online repos, we call these copies as "Fork" of the original
+
+Fork button copies someoneelse`s repo to our github repo!
+This button is at the upper right corner of github repo page.
+
+First fork to your Github repo than clone!
