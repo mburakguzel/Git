@@ -24,5 +24,4 @@ git stash apply stash@{2} // applies stash number 2
 git stash pop // deletes the stash and reapplies the latest stash!
 
 CLEAR STASH
-
-deletes all stashes
+git stash clear # deletes all stashes
